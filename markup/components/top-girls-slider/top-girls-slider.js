@@ -1,33 +1,44 @@
 /*eslint-disable*/
 ;(function($){
-    var options = {
-        itemsCustom : [
-            [700, 1],
-            [720, 2],
-            [800, 2],
-            [1000, 3],
-            [1200, 3],
-            [1250, 4],
-            [1400, 4]
-        ],
-        navigation: false,
-        responsive: true,
-        responsiveRefreshRate: 0,
-        autoHeight: true,
-        scrollPerPage: true,
-        pagination: false,
-        transitionStyle:"fade",
-        autoPlay : 5000
+    var $destroyed = true;
+    var $sliderSlick = $('.top-girls-slider-content');
+    var $documentSize = $(window).width();
+    var $sliderOptions = {
+        arrows: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        prevArrow: '.slider-control.prev-btn',
+        nextArrow: '.slider-control.next-btn'
     };
-    $(".top-girls-slider-content").owlCarousel(options);
-    var owl = $(".top-girls-slider-content").data('owlCarousel');
-
-    $('.slider-control.prev-btn').on('click', function(){
-        owl.prev();
+    var slideItemsHeight = [];
+    var slideItems = $('.top-girls-wrapper .profile-item');
+    $.each(slideItems, function(index, element){
+        slideItemsHeight.push($(element).height());
     });
 
-    $('.slider-control.next-btn').on('click', function(){
-        owl.next();
+    var maxHeightSlide = Math.max(...slideItemsHeight);
+    $('.top-girls').height(maxHeightSlide);
+
+
+    if ($documentSize > 600) {
+        $sliderSlick.slick($sliderOptions);
+        $destroyed = !$destroyed;
+    }else{
+        $('.top-girls').removeAttr('style');
+    }
+    $(window).on('resize', function (e) {
+        var documentSize = $(document).innerWidth();
+        if (documentSize < 600 && !$destroyed) {
+            $sliderSlick.slick('unslick');
+            $('.top-girls').removeAttr('style').css('overflow', 'visible');
+
+            $destroyed = !$destroyed;
+        } else if (documentSize >= 600 && $destroyed) {
+            $sliderSlick.slick($sliderOptions);
+            $('.top-girls').height(maxHeightSlide).css('overflow', 'hidden');
+            $destroyed = !$destroyed;
+        }
     });
 
 })(jQuery);

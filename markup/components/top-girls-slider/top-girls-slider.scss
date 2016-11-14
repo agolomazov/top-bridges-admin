@@ -1,5 +1,6 @@
 .top-girls{
   margin:0 auto 60px;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -20,6 +21,11 @@
   justify-content: space-around;
   position: relative;
   width: 100%;
+}
+
+.profile-item.top-profile.slick-slide{
+  width: 282px !important;
+  margin: 10px;
 }
 
 .slider-controls{
@@ -53,9 +59,16 @@
   float: right;
 }
 
-@media all and (max-width: 740px){
+.profile-item.top-profile.slick-slide:focus{
+  outline: none;
+}
+
+@media all and (max-width: 600px){
+  .slider-control{
+    display: none;
+  }
+
   .top-girls{
-    margin:0 auto 60px;
-    width: 282px;
+    overflow: visible;
   }
 }

@@ -1,0 +1,23 @@
+.wall-users{
+  margin-bottom: 60px;
+  position: relative;
+  width: 100%;
+}
+
+.wall-users-controls{
+  margin-bottom: 40px;
+}
+
+.wall-users__list{
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media all and (max-width: 690px){
+  .wall-users-controls{
+    text-align: center;
+  }
+}
