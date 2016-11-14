@@ -54,6 +54,11 @@ input:focus{
     border: 1px solid $border-gray;
 }
 
+.admin-content{
+    margin: 80px auto 50px;
+    max-width: 1200px;
+}
+
 @media all and (max-width: 780px){
     .admin-wrapper{
         border: none;

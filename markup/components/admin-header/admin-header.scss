@@ -14,7 +14,10 @@
 
 .admin-logo {
   background-color: $light-gray;
+  left: -10px;
   padding: 20px;
+  position: relative;
+  left: -10px;
 }
 
 .admin-menu {
@@ -23,6 +26,8 @@
   flex-direction: row;
   justify-content: space-between;
   background-color: $light-gray;
+  position: relative;
+  right: -10px;
   width: 60%;
 }
 
