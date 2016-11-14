@@ -1,0 +1,372 @@
+.header {
+  background-color: $light-gray;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+}
+
+.red-circle {
+  fill: $red;
+  height: 506px;
+  width: 506px;
+}
+
+.right-part {
+  float: right;
+  padding: 120px 0 0 0;
+  position: relative;
+  width: 50%;
+}
+
+.right-part-wrapper:before {
+  border: 1px solid #e3e3e3;
+  content: '';
+  display: block;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+}
+
+.block-red-circle {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  z-index: 1;
+}
+
+.mans-block {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.mans-photo {
+  position: relative;
+  left: 0;
+  bottom: -4px;
+}
+
+.left-part-wrapper {
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.logo-block, .login-btn-block {
+  background-color: $light-gray;
+  height: 51px;
+  padding: 30px 55px;
+  position: absolute;
+  width: 185px;
+}
+
+.logo-block {
+  top: 0;
+  left: 0;
+}
+
+.logo-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.login-btn-block {
+  text-align: center;
+  top: 10px;
+  right: 0;
+}
+
+.login-btn {
+  background-color: transparent;
+  border: 1px solid $red;
+  border-radius: 20px;
+  color: #666;
+  padding: 10px 20px;
+  text-decoration: none;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.login-btn:hover {
+  background-color: $red;
+  border: 1px solid transparent;
+  color: $white;
+}
+
+.login-btn:active{
+  background-color: $dark-red;
+}
+
+.left-part-content {
+  display: block;
+  float: left;
+  height: 100%;
+  position: relative;
+  top: 250px;
+  width: 50%;
+}
+
+.left-part-content-wrapper {
+  color: $gray;
+  height: 100%;
+  width: 65%;
+  float: right;
+  margin-right: 10%;
+}
+
+.header-title {
+  font-family: "Times New Roman";
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 0 0 75px;
+  padding: 0;
+}
+
+.text-row {
+  display: block;
+}
+
+.title-description {
+  font-size: 1.3rem;
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+
+.register-btn {
+  background-color: $white;
+  border: 1px solid $red;
+  border-radius: 40px;
+  box-shadow: none;
+  color: $red;
+  padding: 15px 40px;
+  text-decoration: none;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.register-btn:hover {
+  background-color: $pink;
+  box-shadow: 0px 10px 32px 0px rgba(219, 76, 62, 0.05);
+}
+
+.register-btn:active{
+  background-color: $dark-pink;
+}
+
+.lock-hear-icon {
+  fill: $red;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+@media all and (max-width: 1280px){
+  .mans-photo{
+    width: 90%;
+  }
+
+  .left-part-content-wrapper{
+    width: 65%;
+  }
+
+  .header-title{
+    font-size: 2.75rem;
+    margin-bottom: 50px;
+  }
+
+  .red-circle{
+    height: 410px;
+    width: 410px;
+  }
+
+  .title-description {
+    font-size: 1.25rem;
+    margin: 0 0 40px 0;
+    padding: 0;
+  }
+}
+
+#svg-bkg{
+  position: relative;
+  top: 4px;
+  max-width: 70%;
+}
+
+#svg-bkg path {
+  stroke-dasharray: 2000;
+  animation: dash 5s linear forwards;
+}
+
+#svg-bkg image{
+  opacity: 0;
+  animation: show .5s linear forwards 3s;
+}
+
+@keyframes dash {
+  0%{
+    stroke-dashoffset: 2000;
+  }
+  80% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  from{
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+@media all and (max-width: 1140px){
+  .header-title  {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+  }
+
+  .title-description{
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (max-width: 1090px){
+  .left-part-content{
+    top: 200px;
+  }
+}
+
+@media all and (max-width: 980px){
+  .header-title {
+    font-size: 2.2rem;
+    margin-bottom: 35px;
+  }
+
+  .title-description {
+    font-size: 1.15rem;
+    margin: 0 0 35px 0;
+    padding: 0;
+  }
+
+  .register-btn{
+    padding: 10px 20px;
+  }
+}
+
+@media all and (max-width: 930px){
+    .header .left-part-content{
+      position: absolute;
+      width: 60%;
+    }
+}
+
+@media all and (max-width: 900px){
+  .red-circle{
+    height: 300px;
+    width: 300px;
+  }
+
+  .header .left-part-content {
+    display: block;
+    float: left;
+    height: 100%;
+    position: absolute;
+    top: 90px;
+    z-index: 20;
+    text-align: center;
+    width: 100%;
+  }
+
+  .header .left-part-content-wrapper {
+    background: rgba(255, 255, 255, 0.75);
+    color: #666;
+    height: auto;
+    float: none;
+    margin: 0 auto;
+    padding: 35px 20px;
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 630px){
+  .red-circle{
+    display: none;
+  }
+
+  .left-part-content-wrapper{
+    width: 80%;
+  }
+
+  .right-part-wrapper:before{
+    display: none;
+  }
+
+  .mans-photo{
+    width: 100%;
+  }
+
+  .logo-block, .login-btn-block{
+    background-color: transparent;
+  }
+
+  .logo-block{
+    padding: 20px 30px;
+  }
+
+  .login-btn-block{
+    padding: 25px 0;
+    width: 120px;
+  }
+
+  .header .header-title {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .header .title-description{
+    font-size: .95rem;
+    margin-bottom: 15px;
+  }
+
+  .left-part-content{
+    top: 90px;
+  }
+}
+
+@media all and (max-width: 560px){
+  .header .left-part-content-wrapper{
+    padding: 15px 15px 25px;
+  }
+
+  .header .header-title{
+    margin-bottom: 0;
+  }
+
+  .text-row{
+    display: inline;
+  }
+}

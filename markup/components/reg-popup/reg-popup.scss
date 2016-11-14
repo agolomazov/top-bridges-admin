@@ -1,0 +1,56 @@
+.reg-modal{
+  display: none;
+  background-color: $white;
+  max-width: 450px;
+  min-width: 320px;
+  width: 100%;
+}
+
+.reg-modal-wrapper{
+  position: relative;
+  padding: 30px 50px;
+}
+
+.row-title{
+  display: block;
+}
+
+.input-select{
+  border: 1px solid $middle-gray;
+  border-radius: 20px;
+  color: $light-dark-gray;
+  font-size: 1rem;
+  padding: 10px 5%;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+.input-select:focus{
+  outline: none;
+}
+
+.input-select option{
+  padding: 5px 5px;
+}
+
+.select-row{
+  position: relative;
+}
+
+.select-row:before{
+  content: '';
+  border-top: 5px solid $red;
+  border-right: 5px solid $white;
+  border-bottom: 5px solid $white;
+  border-left: 5px solid $white;
+  display: block;
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  height: 0;
+  width: 0;
+  z-index: 20;
+}

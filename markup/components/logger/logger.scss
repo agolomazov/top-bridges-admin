@@ -1,0 +1,128 @@
+.logger{
+  background-color: $light-gray;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+}
+
+.logger-right-part {
+  float: right;
+  padding: 120px 0 0 0;
+  position: relative;
+  width: 50%;
+}
+
+.logger-right-part-wrapper:before {
+  border: 1px solid #e3e3e3;
+  content: '';
+  display: block;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+}
+
+.logger .logger-left-part-wrapper {
+  height: auto;
+  display: block;
+  width: 100%;
+}
+
+.logger-left-part-content {
+  display: block;
+  float: left;
+  height: 100%;
+  position: relative;
+  top: 170px;
+  width: 50%;
+}
+
+@media all and (max-width: 1140px){
+  .header-title  {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+  }
+
+  .title-description{
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (max-width: 980px){
+  .header-title {
+    font-size: 2.2rem;
+    margin-bottom: 35px;
+  }
+
+  .title-description {
+    font-size: 1.15rem;
+    margin: 0 0 35px 0;
+    padding: 0;
+  }
+
+  .register-btn{
+    padding: 10px 20px;
+  }
+}
+
+@media all and (max-width: 900px){
+
+  .logger .left-part-content {
+    display: block;
+    float: left;
+    height: 100%;
+    position: absolute;
+    top: 120px;
+    z-index: 20;
+    text-align: center;
+    width: 100%;
+  }
+
+  .header-title{
+    background-color: rgba(255, 255, 255, .75);
+    padding: 10px 30px;
+  }
+
+
+  .logger .left-part-content-wrapper {
+    width: 120%;
+    position: absolute;
+    left: 20%;
+  }
+
+  .logger-left-part-content {
+    display: block;
+    float: left;
+    height: 100%;
+    position: absolute;
+    top: 115px;
+    width: 60%;
+    text-align: center;
+  }
+}
+
+
+@media all and (max-width: 560px){
+  .header-title{
+    font-size: 1.5rem;
+  }
+
+  .logger-left-part-content{
+    top: 80px;
+  }
+}
+
+@media all and (max-width: 420px){
+  .logger-left-part-content {
+    top: 35px;
+  }
+}
+
+@media all and (max-width: 400px){
+  .logger .left-part-content-wrapper {
+    width: 120%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+  }
+}

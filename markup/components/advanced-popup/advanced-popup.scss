@@ -1,0 +1,202 @@
+.advanced-popup {
+  display: none;
+  background: $white;
+  width: 900px;
+}
+
+.wrapper {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.left-part-advanced-popup {
+  background-color: $light-gray;
+  display: flex;
+  flex-direction: column;
+  width: 62%;
+}
+
+.right-part-advanced-popup {
+  width: 38%;
+}
+
+.top-part {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-part-top-part,
+.right-part-top-part {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+}
+
+.slider-photo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-part-top-part .slider-photo {
+  width: 100%;
+  overflow: hidden;
+}
+
+.left-part-top-part .slider-photo .slide-item {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.right-part-top-part .slider-photo {
+  display: block;
+}
+
+.right-part-top-part .slider-photo .slide-item {
+  width: 49%;
+  height: 33%;
+  overflow: hidden;
+  margin-left: 1px;
+  float: left;
+  position: relative;
+}
+
+.right-part-top-part .slider-photo .slide-item img {
+  cursor: pointer;
+  filter: grayscale(100%);
+  width: 100%;
+  object-fit: fill;
+  -webkit-transition: filter .5s;
+  -moz-transition: filter .5s;
+  -o-transition: filter .5s;
+  transition: filter .5s;
+}
+
+.right-part-top-part .slider-photo .slide-item:hover img {
+  filter: grayscale(0%);
+}
+
+.advanced-popup .left-part-advanced-popup .bottom-part {
+  height: 260px;
+}
+
+.advanced-popup .left-part-advanced-popup .bottom-part .slider-photo {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.advanced-popup .left-part-advanced-popup .bottom-part .slider-photo .slide-item {
+  display: block;
+  width: 90%;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.advanced-popup .left-part-advanced-popup .bottom-part .slider-photo .slide-item .photo-name {
+  color: $gray;
+  font-family: "Times New Roman";
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.advanced-popup .left-part-advanced-popup .bottom-part .slider-photo .slide-item .photo-name .photo-name-age {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: .875rem;
+  color: $light-dark-gray;
+  text-transform: none;
+}
+
+.slide-photo-cite {
+  color: $gray;
+  font-family: 'Roboto', sans-serif;
+  font-size: .875rem;
+}
+
+.advanced-popup .left-part-advanced-popup .top-part .left-part-top-part .slider-controls {
+  position: absolute;
+  top: 44%;
+  width: 80%;
+  left: 10%;
+  z-index: 20;
+}
+
+.advanced-popup .left-part-advanced-popup .top-part .left-part-top-part .slider-controls .slider-control {
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  width: 30px;
+  font-size: 2rem;
+  color: $red;
+
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -o-transition: color .5s;
+  transition: color .5s;
+}
+
+.advanced-popup .left-part-advanced-popup .top-part .left-part-top-part .slider-controls .slider-control:hover {
+  color: darken($red, 10%);
+}
+
+.advanced-popup .left-part-advanced-popup .top-part .left-part-top-part .slider-controls .slider-control.prev-item {
+  float: left;
+}
+
+.advanced-popup .left-part-advanced-popup .top-part .left-part-top-part .slider-controls .slider-control.next-item {
+  float: right;
+}
+
+.slider-photo.slide-thumbs li.slide-item.active:before {
+  content: '';
+  height: 90%;
+  width: 90%;
+  top: 4%;
+  left: 4%;
+  position: absolute;
+  display: block;
+  border: 1px solid $red;
+  z-index: 100;
+}
+
+.slider-photo.slide-thumbs li.slide-item.active img {
+  filter: grayscale(0%);
+}
+
+.advanced-popup .bottom-part .slider-photo li.slide-item {
+  visibility: hidden;
+}
+
+.advanced-popup .bottom-part .slider-photo li.slide-item.active {
+  visibility: visible;
+}
+
+@media all and (max-width: 920px) {
+  .advanced-popup {
+    max-width: 450px;
+    min-width: 320px;
+  }
+
+  .left-part-advanced-popup {
+    display: none;
+  }
+
+  .right-part-advanced-popup {
+    width: 100%;
+  }
+}

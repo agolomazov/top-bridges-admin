@@ -1,0 +1,157 @@
+.accept {
+  background: $light-gray;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+}
+
+.bg-accept{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.img-bg-accept{
+  margin: 0;
+  padding: 0;
+  transform: translateY(4px);
+  width: 100%;
+}
+
+.accept .wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 320px;
+  z-index: 20;
+}
+
+.red-box {
+  background-color: rgba(219, 76, 62, .95);
+  margin: 0 auto 70px;
+  max-width: 770px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.red-box-wrapper {
+  border: 1px solid $pink-border;
+  color: $white;
+  padding: 50px 120px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.red-box-title {
+  margin-bottom: 50px;
+}
+
+.red-box-title__link {
+  display: block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  position: relative;
+}
+
+.svg-white-logo {
+  height: 49px;
+  width: 301px;
+}
+
+.red-box-title__link:before {
+  background: $white;
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  width: 30px;
+}
+
+.title-subtext {
+  display: inline-block;
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+.red-box__description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+.red-box__description p {
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+@media all and (max-width: 920px) {
+  .red-box-wrapper {
+    padding: 40px 80px;
+  }
+
+  .red-box-title__link:before {
+    right: 80px;
+  }
+}
+
+@media all and (max-width: 860px){
+  .accept{
+    padding: 90px 0 120px;
+  }
+
+  .red-box{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 810px){
+  .red-box-title__link:before{
+    display: none;
+  }
+}
+
+@media all and (max-width: 720px){
+  .red-box-wrapper{
+    padding: 40px;
+  }
+}
+
+@media all and (max-width: 630px){
+   .accept{
+     padding: 40px 0;
+   }
+}
+
+@media all and (max-width: 480px){
+  .accept{
+    padding: 20px 0;
+  }
+
+  .svg-white-logo{
+    width: 220px;
+  }
+
+  .red-box-title{
+    margin-bottom: 30px;
+  }
+  
+  .red-box-title{
+    font-size: .9rem;
+  }
+
+  .red-box-wrapper{
+    padding: 40px 20px;
+  }
+
+  .red-box__description p{
+    font-size: .9rem;
+  }
+}

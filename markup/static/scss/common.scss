@@ -1,0 +1,45 @@
+// Common styles of the project
+
+html, body {
+    background-color: $light-gray;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+.page {
+    //padding: 0 !important;
+}
+
+.page__wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+* html .page__wrapper {
+    height: 100%;
+}
+
+.page__buffer {
+    height: 50px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.center-content{
+    text-align: center;
+}
+
+input:focus{
+    outline: none;
+}
