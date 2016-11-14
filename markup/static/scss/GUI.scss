@@ -66,3 +66,250 @@
   height: 12px;
   background-position: -73px -5px;
 }
+
+
+/*
+    Блоки профиля
+*/
+.profile-item{
+  background-color: $white;
+  box-shadow: 0px 2px 5px 0px rgba(62, 0, 3, 0.05);
+  cursor: pointer;
+  margin-bottom: 25px;
+  overflow: hidden;
+  position: relative;
+  width: 282px;
+  
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.profile-item:hover{
+  box-shadow: 0 14px 60px 0 rgba(62,0,3,.15);
+}
+
+.profile-item:after{
+  content: '';
+  border: 1px solid $light-gray-border;
+  display: block;
+  height: 98%;
+  left: 2%;
+  position: absolute;
+  top: 1%;
+  width: 96%;
+  z-index: 10;
+  
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+
+  pointer-events: none;
+}
+
+.profile-item:hover:after{
+  border: 1px solid $middle-pink;
+}
+
+.profile-item .top-part{
+  display: block;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-item.top-profile:before{
+  background: url(%=static=%assets/top-girls-slider/top-icon.png) no-repeat;
+  content: '';
+  display: block;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  z-index: 20;
+}
+
+.profile-item .bottom-part{
+  margin-bottom: 10px;
+  position: relative;
+  padding: 0 40px;
+}
+
+.profile-item .profile-row{
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.profile-row .left-part,
+.profile-row .right-part{
+  width: 50%;
+}
+
+
+.profile-row .left-part{
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.profile-row .right-part{
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-item .profile-name{
+  color: $gray;
+  font-family: "Times New Roman";
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.profile-item:hover .profile-name{
+  color: $red;
+}
+
+.profile-name .profile-age{
+  color: $light-dark-gray;
+  display: block;
+  font-size: .875rem;
+  text-transform: none;
+}
+
+.profile-item .profile-link{
+  align-items: center;
+  background-color: $white;
+  box-shadow: 0px 7px 20px 0px rgba(62, 0, 3, 0.07);
+  border-radius: 50%;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+  
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.profile-item:hover .profile-link{
+  box-shadow: 0px 7px 20px 0px rgba(62, 0, 3, 0.07);
+}
+
+.profile-item .profile-link-item{
+  color: $profile-link-color;
+  text-decoration: none;
+
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.profile-item:hover .profile-link-item{
+  color: $red;
+}
+
+.profile-item .id-profile,
+.profile-item .online-status{
+  color: $light-dark-gray;
+  font-family: 'Roboto', sans-serif;
+  font-size: .875rem;
+}
+
+.profile-item .online-status{
+  position: relative;
+  padding-left: 15px;
+}
+
+.online-status:before{
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 5px;
+  width: 5px;
+}
+
+.online-status.online:before{
+  background-color: $online-color;
+}
+
+.online-status.offline:before{
+  background-color: $red;
+}
+
+.profile-item .profile-link-controls{
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.profile-item .profile-link-control{
+  align-items: center;
+  background-color: $white;
+  border-radius: 50%;
+  box-shadow: 0px 5px 13px 0px rgba(62, 0, 3, 0.07);
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.profile-item .profile-link-control:before{
+  box-shadow: 0px 5px 13px 0px rgba(62, 0, 3, 0.15);
+}
+
+.profile-item:hover .sprite.sprite-comment-icon{
+   width: 14px;
+   height: 12px;
+   background-position: -5px -5px;
+}
+
+.profile-item:hover .sprite.sprite-mail-icon{
+  width: 14px;
+  height: 10px;
+  background-position: -5px -27px;
+}
+
+.profile-item:hover .sprite.sprite-star-icon{
+   width: 14px;
+   height: 12px;
+   background-position: -49px -49px;
+}
+
+.profile-item:hover .sprite.sprite-price-icon{
+  width: 10px;
+  height: 12px;
+  background-position: -53px -5px;
+}
+
+.profile-item:hover .sprite.sprite-smile-icon{
+  width: 12px;
+  height: 12px;
+  background-position: -5px -49px;
+}
