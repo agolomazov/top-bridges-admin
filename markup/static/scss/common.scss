@@ -59,9 +59,60 @@ input:focus{
     max-width: 1200px;
 }
 
+.input-text {
+    border: 1px solid $middle-gray;
+    border-radius: 20px;
+    color: $light-dark-gray;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.input-text:focus {
+    background-color: $light-gray;
+}
+
+.sm-input-w{
+    width: 40px;
+}
+
+.btn {
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn:hover{
+    background-color: darken($red, 10%);
+}
+
+.btn:active{
+    background-color: darken($red, 15%);
+}
+
+.btn-red{
+    background-color: $red;
+    color: $white;
+}
+
+@media all and (max-width: 1180px){
+    .admin-content{
+        margin: 110px auto 50px;
+    }
+}
+
 @media all and (max-width: 780px){
     .admin-wrapper{
         border: none;
+    }
+
+    .admin-content{
+        margin: 60px auto 50px;
     }
 }
 
