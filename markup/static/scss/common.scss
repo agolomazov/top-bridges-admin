@@ -43,3 +43,25 @@ html, body {
 input:focus{
     outline: none;
 }
+
+.admin-container{
+    background-color: $light-gray;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.admin-wrapper{
+    border: 1px solid $border-gray;
+}
+
+@media all and (max-width: 780px){
+    .admin-wrapper{
+        border: none;
+    }
+}
+
+@media all and (max-width: 480px){
+    .admin-container{
+        padding: 40px 20px;
+    }
+}
