@@ -1,7 +1,7 @@
 /*eslint-disable*/
 ;(function($){
     var $destroyed = true;
-    var $sliderSlick = $('.blacklist-slider-content');
+    var $sliderSlick = $('.favorite-slider-content');
     var $documentSize = $(window).width();
     var $sliderOptions = {
         arrows: true,
@@ -28,26 +28,26 @@
         ]
     };
     var slideItemsHeight = [];
-    var slideItems = $('.blacklist-slide');
+    var slideItems = $('.favorite-slide');
     $.each(slideItems, function(index, element){
         slideItemsHeight.push($(element).height());
     });
 
     var maxHeightSlide = Math.max(...slideItemsHeight);
-
+    
 
 
     if ($documentSize > 670) {
         $sliderSlick.slick($sliderOptions);
         $destroyed = !$destroyed;
     }else{
-        $('.blacklist-slide').removeAttr('style');
+        $('.favorite-slide').removeAttr('style');
     }
     $(window).on('resize', function (e) {
         var documentSize = $(document).innerWidth();
         if (documentSize < 670 && !$destroyed) {
             $sliderSlick.slick('unslick');
-            $('.blacklist-slide').removeAttr('style').css('overflow', 'visible');
+            $('.favorite-slide').removeAttr('style').css('overflow', 'visible');
 
             $destroyed = !$destroyed;
         } else if (documentSize >= 600 && $destroyed) {
