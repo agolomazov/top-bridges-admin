@@ -18,6 +18,7 @@
     });
 
     var maxHeightSlide = Math.max(...slideItemsHeight);
+    maxHeightSlide += 15;
     $('.top-girls').height(maxHeightSlide);
 
 
@@ -36,7 +37,7 @@
             $destroyed = !$destroyed;
         } else if (documentSize >= 600 && $destroyed) {
             $sliderSlick.slick($sliderOptions);
-            $('.top-girls').height(maxHeightSlide).css('overflow', 'hidden');
+            $('.top-girls').height(maxHeightSlide ).css('overflow', 'hidden');
             $destroyed = !$destroyed;
         }
     });
