@@ -72,12 +72,22 @@ input:focus{
     border-radius: 20px;
     color: $light-dark-gray;
     font-size: 1rem;
-    padding: 7px 20px;
+    padding: 7px 25px 7px 10px;
     position: relative;
     -webkit-appearance: none;
     -moz-appearance-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    text-align: left;
+}
+
+.input-textarea{
+    min-height: 100px;
+    resize: none;
+}
+
+.input-textarea:focus{
+    outline: none;
 }
 
 .input-text:focus {

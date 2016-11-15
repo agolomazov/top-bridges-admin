@@ -19,3 +19,56 @@
 .edit-profile .profile-content-block-wrapper h3{
   font-size: 1.5rem;
 }
+
+.edit-profile .profile-settings-part{
+  padding: 0 2%;
+  width: 45%;
+}
+
+.info-form .form-row{
+  margin-bottom: 15px;
+}
+
+.info-form .label-form{
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info-form .label-text{
+  align-self: center;
+  color: $gray;
+  font-family: "Times New Roman", serif;
+  font-size: 1rem;
+}
+
+.info-form .label-text.top-label-text {
+  align-self: baseline;
+}
+
+.select-element{
+  position: relative;
+}
+
+.select-element:before{
+  content: '';
+  border-top: 5px solid #db4c3e;
+  border-right: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  border-left: 5px solid #fff;
+  display: block;
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  height: 0;
+  width: 0;
+  z-index: 20;
+}
+
+.select-group .select-element:before{
+  top: 9px;
+  right: 10px;
+}
