@@ -72,3 +72,66 @@
   top: 9px;
   right: 10px;
 }
+
+.profile-settings-row {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile-settings-part.without-border.content-to-bottom {
+  border: none;
+}
+
+.label-form.label-to-row{
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.label-form.label-to-row .label-text{
+  align-self: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.label-form.label-to-row .input-textarea.input-to-row{
+  width: 100%;
+}
+
+.label-form.label-checkbox{
+  justify-content: flex-start;
+  position: relative;
+}
+
+.label-form.label-checkbox input[type=checkbox] + .label-to-row{
+  cursor: pointer;
+  padding: 0 0 0 20px;
+}
+
+.label-form.label-checkbox input[type=checkbox] + .label-to-row:before{
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAaCAYAAAD43n+tAAACO0lEQVRYR+2XPWhTURiG35MfSNRUkiGQpLgEsqRgY7BLBx1aHASnCk7+DaXYveLP6A91r4jQog62CHVzqoMOOlQiGaJgIEvoTTIl2BgTyM8r52okxNvbczuUm5hMl+R85/ue7z33y3sEhuwjhowHIyC7K/r/KMTCDvH8CTqfP4E/f5gKI44cg+PUaeDKAkR43FKTGo0GNU1DtVpFu902zeN0OuHz+RCJRODxeAzzGH5JLU8uLUJcugqcmYEYO25aJHe/E+/fghvPIB6tQEROKEHV63Vms1mEQiH4/X643W7TuGazyUqlgmKxiFgsBq/X+896Y6CHd4n4JMSFOaXCum3l5ksi+xXi1j2luFwuR9nxYDCotL6bp1QqsVarIRqNqgG1L56jY/XVvsr0nw+pVOfaHJybW0oFptNpxuPxfZXpzyOVymQySCQSakCt89N0vfmgVFR/MiuxqVSKyWTyQHn2ijXcTLUoZtLE9keI6zf+7qMaKxthKyAJwwd3IG7fh5iYHCwgrj0mpqYhJk7qhe8FI38bCIV6AXQgA2W679JAAPWqIp/7j1nvYBgYIB1KHj0J1DMEhmrKGfkUWyo0dH+sPKj1eb1OfPtiP+vDnTx58485PTsL4RszN6fVXeLd1m9zurwCMW7dnAYCAbhcLtM8rVaL5XLZujnVB4CWJ148RSe1DdZr5tcH71E4klPA5Xllp93dUDruQqFg6foQDocNnbY+sOx+A7Va3wjIascOe/1IocPuuNV8vwC+O3cqBgm4FwAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-position: -31px -5px;
+  content: '';
+
+  display: block;
+  height: 16px;
+  left: 1px;
+  top: 2px;
+  position: absolute;
+  width: 16px;
+}
+
+.label-form.label-checkbox input[type=checkbox]:checked + .label-to-row:before{
+  background-position: -5px -5px;
+}
+
+.input-group .label-text,
+.input-group .input-text{
+  margin-right: 5px;
+}

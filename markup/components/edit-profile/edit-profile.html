@@ -18,12 +18,11 @@
                 </div>
             </div>
         </div>
-
-        <div class="profile-content-block">
-            <div class="profile-content-block-wrapper">
-                <h3 class="profile-header mb25">Информация</h3>
-                <div class="info-form-wrapper">
-                    <form action="#" class="info-form">
+        <form action="#" class="info-form">
+            <div class="profile-content-block">
+                <div class="profile-content-block-wrapper">
+                    <h3 class="profile-header mb25">Информация</h3>
+                    <div class="info-form-wrapper">
                         <div class="profile-settings-list">
                             <div class="profile-settings-part">
                                 <div class="form-row">
@@ -201,7 +200,7 @@
                                     <label class="label-form">
                                         <span class="label-text">Религия:</span>
                                         <span class="select-element"><select name="religion" class="input-select">
-                                            <option value="1">Хрестианство</option>
+                                            <option value="1">Христианство</option>
                                             <option value="2">Ислам</option>
                                             <option value="3">Буддизм</option>
                                             <option value="4">Иудаизм</option>
@@ -253,9 +252,74 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="profile-content-block">
+                <div class="profile-content-block-wrapper">
+                    <h3 class="profile-header mb25">Your advertisment</h3>
+                    <div class="info-form-wrapper">
+                        <div class="profile-settings-list">
+                            <div class="profile-settings-row">
+                                <div class="profile-settings-part without-border content-to-bottom">
+                                    <div class="form-row">
+                                        <label class="label-form">
+                                            <span class="label-text">По возрастному критерию:</span>
+                                            <span class="input-group">
+                                            <span class="label-text">от</span>
+                                            <input type="text" class="input-text sm-input-w text-center" name="from">
+                                            <span class="label-text">до</span>
+                                            <input type="text" class="input-text sm-input-w text-center" name="to">
+                                        </span>
+                                        </label>
+                                    </div>
+                                    <div class="form-row">
+                                        <label class="label-form">
+                                            <span class="label-text">Цель знакомства:</span>
+                                            <input type="text" class="input-text" name="">
+                                        </label>
+                                    </div>
+                                    <div class="form-row">
+                                        <label class="label-form label-to-row">
+                                            <span class="label-text">Самостоятельное описание:</span>
+                                            <textarea name="description"
+                                                      class="input-text input-textarea input-to-row"></textarea>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="profile-settings-part without-border content-to-bottom">
+                                    <div class="form-row">
+                                        <label class="label-form label-to-row">
+                                            <span class="label-text">Идеальный партнер:</span>
+                                            <textarea name="ideal"
+                                                      class="input-text input-textarea input-to-row"></textarea>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-settings-part without-border content-to-row">
+                                <div class="form-row">
+                                    <label class="label-form label-checkbox">
+                                        <input type="checkbox" checked value="1" class="input-checkbox" name="alerts">
+                                        <span class="label-text label-to-row">Присылать мне уведомления о новых сообщениях</span>
+                                    </label>
+                                </div>
+                                <div class="form-row">
+                                    <label class="label-form label-checkbox">
+                                        <input type="checkbox" value="1" class="input-checkbox" name="alerts">
+                                        <span class="label-text label-to-row">Присылать мне уведомления о новых профилях</span>
+                                    </label>
+                                </div>
+                                <div class="form-row">
+                                    <button class="btn btn-red" type="submit">Сохранить изменения</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
     </div>
 </div>
