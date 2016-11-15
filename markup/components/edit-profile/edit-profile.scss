@@ -1,35 +1,35 @@
-.edit-profile{
+.edit-profile {
   position: relative;
   width: 100%;
 }
 
-.change-password-form .label-text{
+.change-password-form .label-text {
   color: $light-dark-gray;
   margin-right: 40px;
 }
 
-.change-password-form .input-text{
+.change-password-form .input-text {
   margin-right: 40px;
 }
 
-.edit-profile .profile-content-block-wrapper h4{
+.edit-profile .profile-content-block-wrapper h4 {
   font-size: 1.25rem;
 }
 
-.edit-profile .profile-content-block-wrapper h3{
+.edit-profile .profile-content-block-wrapper h3 {
   font-size: 1.5rem;
 }
 
-.edit-profile .profile-settings-part{
+.edit-profile .profile-settings-part {
   padding: 0 2%;
   width: 45%;
 }
 
-.info-form .form-row{
+.info-form .form-row {
   margin-bottom: 15px;
 }
 
-.info-form .label-form{
+.info-form .label-form {
   align-items: stretch;
   display: flex;
   flex-direction: row;
@@ -38,7 +38,7 @@
   width: 100%;
 }
 
-.info-form .label-text{
+.info-form .label-text {
   align-self: center;
   color: $gray;
   font-family: "Times New Roman", serif;
@@ -49,11 +49,11 @@
   align-self: baseline;
 }
 
-.select-element{
+.select-element {
   position: relative;
 }
 
-.select-element:before{
+.select-element:before {
   content: '';
   border-top: 5px solid #db4c3e;
   border-right: 5px solid #fff;
@@ -68,7 +68,7 @@
   z-index: 20;
 }
 
-.select-group .select-element:before{
+.select-group .select-element:before {
   top: 9px;
   right: 10px;
 }
@@ -85,7 +85,7 @@
   border: none;
 }
 
-.label-form.label-to-row{
+.label-form.label-to-row {
   align-self: flex-start;
   display: flex;
   flex-direction: column;
@@ -93,27 +93,27 @@
   width: 100%;
 }
 
-.label-form.label-to-row .label-text{
+.label-form.label-to-row .label-text {
   align-self: flex-start;
   justify-content: flex-start;
   margin-bottom: 10px;
 }
 
-.label-form.label-to-row .input-textarea.input-to-row{
+.label-form.label-to-row .input-textarea.input-to-row {
   width: 100%;
 }
 
-.label-form.label-checkbox{
+.label-form.label-checkbox {
   justify-content: flex-start;
   position: relative;
 }
 
-.label-form.label-checkbox input[type=checkbox] + .label-to-row{
+.label-form.label-checkbox input[type=checkbox] + .label-to-row {
   cursor: pointer;
   padding: 0 0 0 20px;
 }
 
-.label-form.label-checkbox input[type=checkbox] + .label-to-row:before{
+.label-form.label-checkbox input[type=checkbox] + .label-to-row:before {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAaCAYAAAD43n+tAAACO0lEQVRYR+2XPWhTURiG35MfSNRUkiGQpLgEsqRgY7BLBx1aHASnCk7+DaXYveLP6A91r4jQog62CHVzqoMOOlQiGaJgIEvoTTIl2BgTyM8r52okxNvbczuUm5hMl+R85/ue7z33y3sEhuwjhowHIyC7K/r/KMTCDvH8CTqfP4E/f5gKI44cg+PUaeDKAkR43FKTGo0GNU1DtVpFu902zeN0OuHz+RCJRODxeAzzGH5JLU8uLUJcugqcmYEYO25aJHe/E+/fghvPIB6tQEROKEHV63Vms1mEQiH4/X643W7TuGazyUqlgmKxiFgsBq/X+896Y6CHd4n4JMSFOaXCum3l5ksi+xXi1j2luFwuR9nxYDCotL6bp1QqsVarIRqNqgG1L56jY/XVvsr0nw+pVOfaHJybW0oFptNpxuPxfZXpzyOVymQySCQSakCt89N0vfmgVFR/MiuxqVSKyWTyQHn2ijXcTLUoZtLE9keI6zf+7qMaKxthKyAJwwd3IG7fh5iYHCwgrj0mpqYhJk7qhe8FI38bCIV6AXQgA2W679JAAPWqIp/7j1nvYBgYIB1KHj0J1DMEhmrKGfkUWyo0dH+sPKj1eb1OfPtiP+vDnTx58485PTsL4RszN6fVXeLd1m9zurwCMW7dnAYCAbhcLtM8rVaL5XLZujnVB4CWJ148RSe1DdZr5tcH71E4klPA5Xllp93dUDruQqFg6foQDocNnbY+sOx+A7Va3wjIascOe/1IocPuuNV8vwC+O3cqBgm4FwAAAABJRU5ErkJggg==);
   background-repeat: no-repeat;
   background-position: -31px -5px;
@@ -127,11 +127,110 @@
   width: 16px;
 }
 
-.label-form.label-checkbox input[type=checkbox]:checked + .label-to-row:before{
+.label-form.label-checkbox input[type=checkbox]:checked + .label-to-row:before {
   background-position: -5px -5px;
 }
 
 .input-group .label-text,
-.input-group .input-text{
+.input-group .input-text {
   margin-right: 5px;
+}
+
+@media all and (max-width: 1150px) {
+  .edit-profile .profile-settings-list {
+    flex-direction: row;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .edit-profile .profile-settings-list {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .edit-profile .profile-settings-part {
+    padding: 0;
+    width: 70%;
+  }
+
+  .edit-profile .profile-header {
+    text-align: center;
+  }
+
+  .edit-profile .profile-form.change-password-form .form-row .label-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .advertisment .profile-settings-list {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & .profile-settings-row {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+}
+
+@media all and (max-width: 766px) {
+  .edit-profile .change-password-form .form-row .profile-label {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 45%;
+  }
+
+  .edit-profile .change-password-form .form-row .profile-label .input-text,
+  .edit-profile .change-password-form .form-row .profile-label .label-text {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .edit-profile .profile-settings-part {
+    width: 95%;
+  }
+}
+
+@media all and (max-width: 590px) {
+  .edit-profile .profile-settings-part {
+    width: 100%;
+  }
+
+  .edit-profile .info-form .label-form {
+    flex-direction: column;
+
+    & .select-element .input-select {
+      margin-bottom: 5px;
+      width: 100%;
+    }
+  }
+
+  .edit-profile .input-textarea {
+    width: 95%;
+  }
+
+  .edit-profile .info-form .label-text.top-label-text {
+    align-self: center;
+  }
+
+  .change-password-form .btn.btn-red{
+    width: 240px;
+  }
+}
+
+@media all and (max-width: 480px){
+  .edit-profile .change-password-form .label-text{
+    text-align: center;
+    width: 240px;
+  }
 }
