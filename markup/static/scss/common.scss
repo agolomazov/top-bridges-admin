@@ -67,8 +67,25 @@ input:focus{
     padding: 5px;
 }
 
+.input-select {
+    border: 1px solid $middle-gray;
+    border-radius: 20px;
+    color: $light-dark-gray;
+    font-size: 1rem;
+    padding: 7px 20px;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .input-text:focus {
     background-color: $light-gray;
+}
+
+.input-select:focus{
+    outline: none;
 }
 
 .text-right{
@@ -77,6 +94,10 @@ input:focus{
 
 .text-left{
     text-align: left;
+}
+
+.mb25{
+    margin-bottom: 25px !important;
 }
 
 .sm-input-w{
