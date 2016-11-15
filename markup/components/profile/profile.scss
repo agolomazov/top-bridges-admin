@@ -180,3 +180,40 @@
   font-size: 1rem;
   margin-bottom: 10px;
 }
+
+@media all and (max-width: 1150px){
+  .profile-settings-list{
+    flex-direction: column;
+  }
+
+  .profile-settings-part{
+    border: none;
+  }
+
+  .profile-settings-part{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 880px){
+  .left-sidebar{
+    float: none;
+    margin: 0 auto 25px;
+  }
+
+  .profile-content{
+    margin: 0 25px 25px;
+  }
+}
+
+@media all and (max-width: 480px){
+  .profile-content{
+    margin: 0 5px 25px;
+  }
+
+  .left-sidebar{
+    width: 285px;
+  }
+}
