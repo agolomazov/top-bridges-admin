@@ -1,0 +1,91 @@
+.added{
+  position: relative;
+  width: 100%;
+}
+
+.added-wrapper{
+  position: relative;
+  width: 100%;
+}
+
+.added__form-block{
+  background-color: $white;
+  box-shadow: 0px 2px 5px 0px rgba(62, 0, 3, 0.05);
+  margin-bottom: 35px;
+}
+
+.added-form-block__wrapper{
+  padding: 40px;
+}
+
+.added-form-container .input-text{
+  padding: 10px 10px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.added-form-block__title{
+  color: $gray;
+  font-family: "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.added .profile-item.top-profile.slick-slide{
+  width: 282px !important;
+  margin: 10px;
+}
+
+.added .added-slide{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 282px;
+
+  &:focus{
+    outline: none;
+  }
+}
+
+.added .link-part{
+  text-align: center;
+}
+
+.added .added-slider{
+  position: relative;
+}
+
+.added .slider-controls {
+  left: 0;
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  z-index: 50;
+}
+
+@media all and (max-width: 670px){
+  .added .slider-controls {
+    display: none;
+  }
+
+  .added-slider-content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .added .added-slide{
+    margin-bottom: 20px;
+  }
+
+  .added-form-block__wrapper{
+    padding: 20px;
+  }
+
+  .added-form-block__title{
+    margin-bottom: 15px;
+  }
+}
+
