@@ -1,1 +1,94 @@
+.upload-image{
+  background-color: $white;
+  position: relative;
+  width: 100%;
+}
+
+.upload-image-wrapper{
+  padding: 40px;
+}
+
+.upload-image-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-image-content__row{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.upload-image-content__part{
+  width: 50%;
+}
+
+.upload-image-content__part-title{
+  color: $gray;
+  font-family: "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.upload-image-content__part p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.upload-image-content__fullpart{
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-image{
+  margin-bottom: 20px;
+  width: 18%;
+}
+
+.upload-image form.upload-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-upload-img{
+  display: none;
+  background-color: transparent;
+  border: 1px solid $red;
+
+  &:hover{
+    color: $white;
+  }
+}
+
+.image-img{
+  max-width: 204px;
+  margin-bottom: 20px;
+}
+
+.input-file{
+  height: 1%;
+  opacity: 0;
+  width: 1%;
+}
+
+.upload-img-label{
+  color: $red;
+  cursor: pointer;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: underline;
+  width: 100%;
+  
+  &:hover{
+    text-decoration: none;
+  }
+}
 
