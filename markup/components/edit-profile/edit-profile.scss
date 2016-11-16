@@ -220,11 +220,27 @@
   }
 
   .edit-profile .info-form .label-text.top-label-text {
-    align-self: center;
+    align-self: flex-start;
+  }
+
+  .edit-profile .info-form .label-text{
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-size: 1rem;
   }
 
   .change-password-form .btn.btn-red{
     width: 240px;
+  }
+
+
+
+  .label-form.label-checkbox input[type=checkbox] + .label-to-row:before{
+    left: -5px;
+  }
+
+  .edit-profile .btn.btn-red{
+    width: 100%;
   }
 }
 

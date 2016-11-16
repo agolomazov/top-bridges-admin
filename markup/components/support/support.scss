@@ -1,1 +1,66 @@
+.support{
+  background-color: $white;
+  box-shadow: 0px 2px 5px 0px rgba(62, 0, 3, 0.05);
+  position: relative;
+  width: 100%;
+}
 
+.support-wrapper{
+  margin: 0 auto;
+  max-width: 395px;
+  padding: 40px 0;
+  position: relative;
+}
+
+.support-title{
+  color: $gray;
+  font-family: "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.support-form-block{
+  width: 100%;
+}
+
+.form-row{
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.support .input-text
+{
+  color: $light-dark-gray;
+  font-family: 'Roboto', sans-serif;
+  font-size: .85rem;
+  padding: 10px 10px;
+  width: 95%;
+}
+
+.support .select-element{
+  width: 100%;
+}
+
+.support .input-select{
+  color: $light-dark-gray;
+  font-family: 'Roboto', sans-serif;
+  font-size: .85rem;
+  padding: 10px 10px;
+  width: 100%;
+}
+
+.support .select-element:before{
+  top: 10px;
+}
+
+.support .btn{
+  width: 100%;
+}
+
+@media all and (max-width: 560px){
+  .support-wrapper{
+    margin: 0 20px;
+  }
+}
