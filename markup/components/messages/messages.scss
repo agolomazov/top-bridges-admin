@@ -1,0 +1,171 @@
+.messages{
+  position: relative;
+  width: 100%;
+}
+
+.messages-wrapper{
+  position: relative;
+  width: 100%;
+}
+
+.messages .ionTabs__tab{
+  background-image: url(%=static=%assets/messages/mail.png);
+  background-repeat: no-repeat;
+  background-color: $light-gray;
+  background-position: 15px 15px;
+  border-left: 1px solid $light-gray-border;
+  border-top: 1px solid $light-gray-border;
+  border-right: 1px solid $light-gray-border;
+  color: $gray;
+  font-family: "Times New Roman", sans-serif;
+  font-size: 1.125rem;
+  padding: 15px 50px;
+  position: relative;
+  
+  &.ionTabs__tab_state_active{
+    background-image: url(%=static=%assets/messages/mail-active.png);
+    background-color: $white;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    color: $red;
+  }
+}
+
+.messages .count-messages{
+  background-color: $red;
+  border-radius: 50%;
+  color: $white;
+  font-size: 1rem;
+  margin-left: 15px;
+  min-height: 8px;
+  min-width: 8px;
+  padding: 0 6px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.messages .sprite-messages{
+  margin-right: 10px;
+}
+
+.messages-body{
+  background-color: $white;
+  padding: 30px;
+}
+
+.messages-table{
+  font-family: 'Roboto', sans-serif;
+  border-collapse: collapse;
+
+  & th{
+    border: 1px solid $light-gray-border;
+    color: $thead-color;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 15px 10px;
+    text-align: left;
+  }
+
+  & tr{
+    border-bottom: 1px solid $light-gray-border;
+  }
+
+  & td{
+    border-left: 1px solid $light-gray-border;
+    border-right: 1px solid $light-gray-border;
+    padding: 20px 10px;
+    vertical-align: top;
+
+    &.without-border{
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+    }
+  }
+
+  .sender-message{
+    min-width: 150px;
+    text-align: center;
+  }
+}
+
+.messages .avatar-cell{
+  text-align: center;
+}
+
+.messages .table-row{
+  color: $light-dark-gray;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.messages .link-to-profile{
+  font-family: "Times New Roman";
+  color: $red;
+  text-decoration: underline;
+  font-weight: bold;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.messages .title-subject{
+  color: $gray;
+  font-family: "Times New Roman";
+  font-weight: bold;
+}
+
+.messages .message-preview{
+  color: $gray;
+}
+
+.messages .link-to-message{
+  color: $red;
+  text-decoration: underline;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.messages .btn.btn-red{
+  text-decoration: none;
+  padding: 7px 15px;
+  margin: 0 10px;
+}
+
+.messages .list-attachments{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.messages .attachment-item{
+  margin-bottom: 10px;
+}
+
+.messages .attachment-message{
+  min-width: 150px;
+}
+
+.messages .attach-img{
+  background-image: url(%=static=%assets/messages/img-ico.jpg);
+  background-repeat: no-repeat;
+  color: $red;
+  font-size: .875rem;
+  text-decoration: underline;
+  padding: 0 0 0 25px;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.messages .date-send-message{
+  color: $gray;
+  font-family: 'Roboto', sans-serif;
+  font-size: .875rem;
+}
