@@ -150,6 +150,13 @@ input:focus{
     color: $white;
 }
 
+.btn-white{
+    background-color: transparent;
+    border: 1px solid $red;
+    color: $gray;
+    text-decoration: none;
+}
+
 .red{
     color: $red;
 }
