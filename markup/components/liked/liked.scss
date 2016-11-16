@@ -1,0 +1,90 @@
+.liked{
+  position: relative;
+  width: 100%;
+}
+
+.liked-wrapper{
+  position: relative;
+  width: 100%;
+}
+
+.liked__form-block{
+  background-color: $white;
+  box-shadow: 0px 2px 5px 0px rgba(62, 0, 3, 0.05);
+  margin-bottom: 35px;
+}
+
+.liked-form-block__wrapper{
+  padding: 40px;
+}
+
+.liked-form-container .input-text{
+  padding: 10px 10px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.liked-form-block__title{
+  color: $gray;
+  font-family: "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+
+.liked .profile-item.top-profile.slick-slide{
+  width: 282px !important;
+  margin: 10px;
+}
+
+.liked .liked-slide{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 282px;
+
+  &:focus{
+    outline: none;
+  }
+}
+
+.liked .link-part{
+  text-align: center;
+}
+
+.liked .liked-slider{
+  position: relative;
+}
+
+.liked .slider-controls {
+  left: 0;
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  z-index: 50;
+}
+
+@media all and (max-width: 710px){
+  .liked .slider-controls {
+    display: none;
+  }
+
+  .liked-slider-content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .liked .liked-slide{
+    margin-bottom: 20px;
+  }
+
+  .liked-form-block__wrapper{
+    padding: 20px;
+  }
+
+  .liked-form-block__title{
+    margin-bottom: 15px;
+  }
+}
