@@ -150,6 +150,14 @@ input:focus{
     color: $white;
 }
 
+.red{
+    color: $red;
+}
+
+.italic{
+    font-style: italic;
+}
+
 @media all and (max-width: 1180px){
     .admin-content{
         margin: 110px auto 50px;

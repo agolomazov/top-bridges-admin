@@ -128,8 +128,15 @@
 
 .profile-settings-part{
   border-right: 1px solid $border-gray;
-  padding: 0 3%;
-  width: 42%;
+  width: 46%;
+}
+
+.profile-settings-part:nth-child(odd){
+  padding: 0 3% 0 0;
+}
+
+.profile-settings-part:nth-child(even){
+  padding: 0 0 0 3%;
 }
 
 .profile-settings-part:last-child{
@@ -161,9 +168,15 @@
 }
 
 .header-profile-block{
-  font-family: 'Roboto', sans-serif;
+  color: $gray;
+  font-family: "Times New Roman", sans-serif;
   font-size: 1.5rem;
+  font-weight: normal;
   margin: 0 0 25px;
+
+  & a{
+    font-family: 'Roboto', sans-serif;
+  }
 }
 
 .profile-link{
@@ -185,6 +198,14 @@
 @media all and (max-width: 1150px){
   .profile-settings-list{
     flex-direction: column;
+  }
+
+  .profile-settings-part:nth-child(odd){
+    padding: 0 0% 0 0;
+  }
+
+  .profile-settings-part:nth-child(even){
+    padding: 0 0 0 0%;
   }
 
   .profile-settings-part{
