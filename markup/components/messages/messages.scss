@@ -86,7 +86,6 @@
   }
 
   .sender-message{
-    min-width: 150px;
     text-align: center;
   }
 }
@@ -147,10 +146,6 @@
   margin-bottom: 10px;
 }
 
-.messages .attachment-message{
-  min-width: 150px;
-}
-
 .messages .attach-img{
   background-image: url(%=static=%assets/messages/img-ico.jpg);
   background-repeat: no-repeat;
@@ -168,4 +163,36 @@
   color: $gray;
   font-family: 'Roboto', sans-serif;
   font-size: .875rem;
+}
+
+@media all and (max-width: 800px){
+    .messages .st-key{
+      width: 30%;
+    }
+
+    .messages .st-head-row.st-head-row-main{
+      padding: 15px;
+    }
+}
+
+@media all and (max-width: 620px){
+    .messages .table-row.text-right{
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      text-align: right;
+
+      & .link-to-message{
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-right: 10px;
+      }
+
+      & .btn.btn-red{
+        display: inline-block;
+        width: 65px;
+      }
+    }
 }
