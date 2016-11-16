@@ -37,7 +37,7 @@
 
 
 
-    if ($documentSize > 670) {
+    if ($documentSize > 710) {
         $sliderSlick.slick($sliderOptions);
         $destroyed = !$destroyed;
     }else{
@@ -45,12 +45,12 @@
     }
     $(window).on('resize', function (e) {
         var documentSize = $(document).innerWidth();
-        if (documentSize < 670 && !$destroyed) {
+        if (documentSize < 710 && !$destroyed) {
             $sliderSlick.slick('unslick');
             $('.added-slide').removeAttr('style').css('overflow', 'visible');
 
             $destroyed = !$destroyed;
-        } else if (documentSize >= 600 && $destroyed) {
+        } else if (documentSize >= 710 && $destroyed) {
             $sliderSlick.slick($sliderOptions);
             $('.blacklist-slide').height(maxHeightSlide ).css('overflow', 'hidden');
             $destroyed = !$destroyed;
