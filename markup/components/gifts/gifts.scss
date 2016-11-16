@@ -21,6 +21,7 @@
 
 .gifts-controls .filter.btn{
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .gifts-list{
@@ -115,4 +116,46 @@
 
 #gifts-list .mix{
   display: none;
+}
+
+@media all and (max-width: 1069px){
+  .gifts-list{
+    justify-content: center;
+  }
+
+  .gifts-controls{
+    text-align: center;
+  }
+
+  .gifts-content .header-profile-block{
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 900px){
+  .gifts .left-sidebar{
+    width: 345px;
+  }
+
+  .gifts .left-sidebar .left-sidebar-inner-wrapper{
+    padding: 20px;
+  }
+
+  .gifts .gifts-controls {
+    margin: 0 0 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 480px){
+   .gifts .left-sidebar{
+     width: 320px;
+   }
+
+  .gifts .gifts-content .profile-content-block-wrapper{
+    padding: 20px;
+  }
 }
