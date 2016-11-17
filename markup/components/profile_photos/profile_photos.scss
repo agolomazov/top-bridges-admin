@@ -1,0 +1,198 @@
+.profile-photos-modal{
+  display: none;
+  max-width: 780px;
+}
+
+.profile-modal-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.profile-photos-modal .left-part,
+.profile-photos-modal .right-part{
+  position: relative;
+  width: 50%;
+}
+
+.profile-modal-wrapper .left-part .other-profile-big-slider{
+  list-style: none;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+
+.profile-modal-wrapper .profile-modal-slider-controls{
+  color: $red;
+  font-size: 2rem;
+  left: 5px;
+  position: absolute;
+  top: 165px;
+  width: 100%;
+  z-index: 50;
+
+  & .slider-control{
+    height: 50px;
+    width: 50px;
+
+    &.prev-item{
+      float: left;
+    }
+
+    &.next-item{
+      float: right;
+    }
+
+  }
+}
+
+.other-profile-big-slider .profile-photo-item{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  &.active{
+    z-index: 20;
+  }
+}
+
+.other-profile-big-slider .profile-photo-item{
+  background-color: $light-gray;
+  overflow: hidden;
+}
+
+.other-profile-big-slider .profile-photo-item .slide-img{
+  object-fit: cover;
+  width: 100%;
+}
+
+.other-profile-big-slider .profile-photo-item .liked-link{
+  bottom: 30px;
+  display: block;
+  right: 30px;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+}
+
+.other-profile-thumb-slider{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.other-profile-thumb-slider .profile-photo-item{
+  height: 33%;
+  overflow: hidden;
+  position: relative;
+  max-height: 124px;
+  width: 50%;
+
+  &.active:before{
+    content: '';
+    display: block;
+    left: 3%;
+    height: 94%;
+    border: 1px solid $red;
+    position: absolute;
+    top: 3%;
+    width: 94%;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  &.active .slide-img{
+    filter: grayscale(0);
+  }
+
+  & .slide-img{
+    object-fit: cover;
+    filter: grayscale(100%);
+    height: 100%;
+    width: 100%;
+  }
+  
+  & .liked-link{
+    height: 30px;
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    width: 30px;
+  }
+}
+
+.modal-close{
+  cursor: pointer;
+  top: -30px;
+  right: 0px;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+}
+
+.modal-close:before,
+.modal-close:after
+{
+  background-color: $red;
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 100%;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.modal-close:hover:before,
+.modal-close:hover:after{
+  background-color: darken($red, 15%);
+}
+
+.modal-close:before{
+  transform: rotate(45deg);
+}
+
+.modal-close:after{
+  transform: rotate(-45deg);
+}
+
+@media all and (max-width: 790px){
+  .profile-modal-wrapper{
+    justify-content: center;
+  }
+
+  .profile-photos-modal .left-part{
+    display: none;
+  }
+
+  .profile-photos-modal .right-part{
+      width: 75%;
+  }
+
+  .other-profile-thumb-slider .profile-photo-item{
+    max-height: 180px;
+  }
+
+  .modal-close{
+    right: 80px;
+  }
+}
+
+@media all and (max-width: 600px){
+  .modal-close{
+    right: 60px;
+  }
+}
