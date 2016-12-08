@@ -199,6 +199,25 @@
   background-position: -29px -5px;
 }
 
+.sprite-delete-contact {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAATCAYAAAD4f6+NAAABOElEQVRIS+2VwWqDQBCGZ4xdJQ204DGnQG57ELwWSh+gPYbkBfpUeYGEHNsHCIFeBQ97K/SUo9BCG9Qap4wgWBNrGnJYIXt0xn+++Wd0ETQ7qBkPnIGaJtIOh+jhdgB2uMaFSsod0UgKiJw+Pq3emjrleBAEA9M011LKXzpKKZGmad913R2dvQ6l9zdTIHA63fdJAcUw2831DBBC8/nl8RAg3/eniOgIISYFFMMkSTIjotDzvB2dvUB58a+rOSASQ3HxHIYIO5cf46pzdXBcPIqiuWEYxFCcxzBZlqFt2+Oqcxyv3aEyFINw8n9gCsgyFIPw8zqYP4E4SKO73nbz/ZrDdC+GuFh+HjKqao5SqhfHca5jWdZQSlmr0w6HtNsh/b4y3f5Dxyzuqd5px9Vxqm6P0Tk71OTaDz+25hQeY/EgAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-delete-active-link {
+  width: 8px;
+  height: 9px;
+  background-position: -5px -5px;
+}
+
+.sprite-delete-link {
+  width: 8px;
+  height: 9px;
+  background-position: -23px -5px;
+}
+
+
 
 /*
     Блоки профиля

@@ -1,5 +1,353 @@
+.chat{
+  position: relative;
+  width: 100%;
+}
+
+.chat-wrapper{
+  position: relative;
+  width: 100%;
+}
+
+.chat-wrapper .left-sidebar,
+.chat-wrapper .right-sidebar{
+  box-shadow: 0px 2px 5px 0px rgba(62, 0, 3, 0.05);
+  position: absolute;
+  top: 0;
+  background-color: $white;
+  width: 280px;
+}
+
+.chat-content{
+  box-shadow: 0px 2px 5px 0px rgba(62, 0, 3, 0.05);
+  max-width: 590px;
+  min-width: 320px;
+  margin: 0 320px;
+}
+
+.chat-wrapper .left-sidebar{
+  left: 0;
+  float: left;
+}
+
+.chat-wrapper .right-sidebar{
+  right: 0;
+  float: right;
+}
+
+.chat-left-sidebar-wrapper{
+  padding: 40px 20px 0;
+}
+
+.sidebar__title{
+  color: $gray;
+  font-family: "Times New Roman";
+  font-size: 1.45rem;
+  margin: 0 20px 30px;
+}
+
+.search-contacts{
+  margin: 0 20px 30px;
+}
+
+.search-contacts .search-input{
+  background: url(%=static=%assets/chat/search-icon.png) no-repeat;
+  background-position: 90% 50%;
+  font-weight: normal;
+  text-indent: 5px;
+  font-size: .875rem;
+  width: 100%;
+}
+
+.list-online-contacts{
+  height: 540px;
+  margin: 0 auto 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 230px;
+}
+
+.list-online-wrapper.nano-content{
+  padding-right: 20px;
+}
+
+.list-online-contacts .profile-item{
+  box-shadow: none;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+  max-width: 100%;
+}
+
+.chat .list-online-contacts .profile-item .profile-row{
+  margin-bottom: 20px;
+}
+
+.list-online-contacts .profile-item:hover{
+  box-shadow: 0px 15px 30px 0px rgba(62, 0, 3, 0.25);
+}
+
+.list-online-contacts .profile-img{
+  filter: grayscale(100%);
+  max-width: 100%;
+
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+}
+
+.list-online-contacts:hover .profile-img{
+  filter: grayscale(0%);
+}
+
+.list-online-contacts .profile-item .top-part{
+  margin-bottom: 20px;
+}
+
+.list-online-contacts .profile-item .bottom-part{
+  padding: 0 20px;
+}
+
+.chat-content{
+  background-color: $white;
+}
+
+.chat-content-header{
+  border-bottom: 1px solid $border-gray;
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chat-contact-thumb-active{
+  border-radius: 50%;
+  margin-right: 25px;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+}
+
+.chat-contact-thumb-active .contact-thumb-active-img{
+  max-width: 110%;
+}
+
 .profile-link-item:hover .sprite-chat-icon{
   width: 14px;
   height: 12px;
   background-position: -29px -5px;
+}
+
+.chat-contact-name{
+  color: $gray;
+  font-family: "Times New Roman", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.status-contact-user{
+  color: $light-dark-gray;
+  font-size: .85rem;
+  font-family: "Roboto";
+  padding-left: 10px;
+  position: relative;
+}
+
+.chat-content-list-messages{
+  margin: 30px 0;
+  height: 540px;
+}
+
+.chat-message {
+  border-radius: 10px;
+  font-family: 'Roboto';
+  font-size: .875rem;
+  font-weight: normal;
+  color: $gray;
+  max-height: 350px;
+  min-width: 320px;
+  margin: 0 40px 20px;
+  padding: 10px 20px;
+  width: 60%;
+}
+
+.chat-content-form{
+  padding-bottom: 20px;
+}
+
+.chat-message.your-message{
+  background-color: $middle-gray;
+  float: left;
+}
+
+.chat-message.contact-message{
+  background-color: $middle-pink;
+  float: right;
+}
+
+.chat-textarea{
+  height: 100px;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: normal;
+  padding: 10px;
+}
+
+.chat-form-links{
+  float: left;
+  list-style: none;
+  margin: 0 0 0 0;
+  padding: 0;
+  position: relative;
+  top: 10px;
+  width: 75px;
+}
+
+.chat-form-links__item{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.chat-content-form .pull-right{
+  float: right;
+  margin-right: 2%;
+  width: 205px;
+}
+
+.sound-block{
+  margin-bottom: 30px;
+}
+
+.round-label{
+  font-family: "Times New Roman";
+  font-size: 1.1rem;
+  color: $light-dark-gray;
+  cursor: pointer;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.round-label .sound-check{
+  width: .01rem;
+}
+
+.sound-check + .sound-check-bg{
+  background: url(%=static=%assets/chat/sound-off-icon.png) no-repeat #ffffff;
+  background-position: 10px;
+  box-shadow: 0px 7px 20px 0px rgba(62, 0, 3, 0.07);
+  position: relative;
+  top: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0 0 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.sound-check:checked + .sound-check-bg{
+  background: url(%=static=%assets/chat/sound-icon.png) no-repeat #ffffff;
+  background-position: 10px;
+  box-shadow: 0px 7px 20px 0px rgba(62, 0, 3, 0.07);
+  position: relative;
+  top: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0 0 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.delete-contact{
+  background: url(%=static=%assets/chat/delete-link.png) no-repeat;
+  background-position: 95% 2px;
+  color: $thead-color;
+  font-family: 'Roboto';
+  font-size: .75rem;
+  text-decoration: underline;
+  padding-right: 20px;
+}
+
+.delete-contact:hover{
+  background: url(%=static=%assets/chat/delete-active-link.png) no-repeat;
+  background-position: 95% 2px;
+  color: $red;
+}
+
+.remove-all-contacts{
+  margin: 0 20px 20px;
+}
+
+
+@media all and (max-width: 1190px){
+  .chat-content{
+    margin: 0 300px;
+  }
+}
+
+@media all and (max-width: 1140px){
+  .chat-left-sidebar-wrapper{
+    padding: 40px 10px 0;
+  }
+
+  .chat-message.your-message, .chat-message.contact-message{
+    float: none;
+    margin: 0 10px 10px;
+  }
+}
+
+@media all and (max-width: 1100px){
+  .chat-content {
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto 30px;
+    width: 100%;
+  }
+
+  .chat-wrapper .left-sidebar,
+  .chat-wrapper .right-sidebar{
+    box-shadow: 0px 2px 5px 0px rgba(62, 0, 3, 0.05);
+    position: relative;
+    top: 0;
+    background-color: $white;
+    width: 280px;
+  }
+
+  .chat-wrapper .left-sidebar{
+    left: 0;
+    float: left;
+    margin-left: 100px;
+  }
+
+  .chat-wrapper .right-sidebar{
+    right: 0;
+    float: none;
+    margin-left: 400px;
+    padding-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 860px){
+  .chat-wrapper .left-sidebar{
+    left: 0;
+    float: left;
+    margin-left: 50px;
+  }
+
+  .chat-wrapper .right-sidebar{
+    right: 0;
+    float: none;
+    margin-left: 350px;
+  }
+}
+
+@media all and (max-width: 780px){
+  .chat-wrapper .left-sidebar,
+  .chat-wrapper .right-sidebar{
+    left: 0;
+    float: none;
+    margin: 0 auto 30px;
+  }
 }
