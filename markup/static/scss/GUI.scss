@@ -181,6 +181,24 @@
   background-position: -38px -5px;
 }
 
+.sprite-chat {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAWCAYAAACG9x+sAAACjUlEQVRYR+2Wv0sbYRjHv0/eS40xs0M3zeaQ4d5zSSwoFEFjNwVxEAQXNWPBTcifUdyLuNZLKv4cTBzMG3DrkAZUsFtBrMXUe/MURaFNcr4XRYrFW9/nPnw/7/d9uSM884eeeX68CPzrBv/PBpRSHwDEAbBhh0WtVhtPJpPf22nCSydv+WTkC68+Tuv7vvyWDSilclLKUVMopdQCEVVt286bZv9c98ZSOWutYOTr0YEFZq5a+YIv309gTUo5ZgpVKpXmABwTUTcR9di2vWR653rdSw+sWe6eka/TyTkGjkHoZqaesFto4hsFdnZ2IrFYLBEKhTqEEFXP8yKO43y9DnIn4DiOG7S1RgEeHIxcxWoJ4lCHRfUqNEUoX7zh3wlYbtH1a80ocHh42KW1TjBzJzNXAEQdx/nSQiBQa00Cw8Nd3qsfCWh0WlaoAugofdq/4f8l4NOaUeC+I9HQwIME7uM/RmBTSvnWdJ7L5fKi1rrc39+/oZRqQyC5ablFI1+nBxbrzOVwrrDhd2/8GsgAmGHmJSLqA3B94X41CjHz0fn5eWZoaOiyHQE9lsqAeYaBJWLqY2rNB3AkLsIZ2t29bEvg9nxPEdEkgBMp5YKpDaVUXko5Ypq7W/dGU1MAJkF8YrlFI99Lp/KWW2ji+36JDw4OUkKI+UqlMh2Px2cBjDeEE0S0DOCUmbNEVLJt+31QgauRNykS9XnR+Xq6fnE6y9TMB9MyCzolrbNMKIXdYhP/wb8Sq6urore3dwXAGYBtx3E+Bg0fZI4nJoT++W0F4DMwtq1coSX/wQK3xyxKRFsAslLKz0GCtTPD72RUc2SL65QN5/Za8h8l0E6Yp5p9EXiqnQ3KfWkg6E491dxvzVpOJqKctw0AAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-chat-icon {
+  width: 14px;
+  height: 12px;
+  background-position: -5px -5px;
+}
+
+.sprite-chat-icon:hover {
+  width: 14px;
+  height: 12px;
+  background-position: -29px -5px;
+}
+
 
 /*
     Блоки профиля
